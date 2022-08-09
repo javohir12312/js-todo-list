@@ -12,7 +12,7 @@ list.addEventListener('click', function (ev) {
 function newElement() {
 
     var li = document.createElement('li');
-    var inputValue = document.getElementById('toDoEl').value;
+    var inputValue = document.getElementById('input').value;
     var t = document.createTextNode(inputValue);
 
     li.appendChild(t);
@@ -25,7 +25,7 @@ function newElement() {
     }
 
 
-    document.getElementById('toDoEl').value = "";
+    document.getElementById('input').value = "";
     var span = document.createElement('SPAN');
     var txt = document.createTextNode("X");
     span.className = "close";
